@@ -1,0 +1,23 @@
+{
+  "name": "cucumber-js_pageobjects_example",
+  "version": "1.0.0",
+  "description": "An example set up for PageObjects with Cucumber.js",
+  "scripts": {
+    "cukeTest": "./node_modules/cucumber/bin/cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobysoby/cucumber-js_pageObjects_example.git"
+  },
+  "author": "Tobias Doll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobysoby/cucumber-js_pageObjects_example/issues"
+  },
+  "homepage": "https://github.com/tobysoby/cucumber-js_pageObjects_example#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
