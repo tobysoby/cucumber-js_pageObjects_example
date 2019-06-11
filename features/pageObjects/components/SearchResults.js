@@ -1,7 +1,7 @@
 "use strict";
 const { By, until } = require('selenium-webdriver')
 
-const SearchResultsListSelector = "//ul[contains(@class, 'react-autosuggest__suggestions-list')]"
+const SearchResultsListSelector = "//div[contains(@class, 'g')]"
 const SearchResultsSelector = "//li"
 
 var logStr = "SearchResultsComponent: "

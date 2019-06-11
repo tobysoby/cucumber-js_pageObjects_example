@@ -5,8 +5,9 @@ const setTimeoutPromise = util.promisify(setTimeout);
 
 const SearchBox = require("./components/SearchBox")
 const SearchResults = require("./components/SearchResults")
+const SearchButton = require("./components/SearchButton")
 
-var BASE_URL = "http://host.docker.internal:3000";
+var BASE_URL = "https://www.google.com";
 
 function Page(driver) {
     this.driver = driver
@@ -31,6 +32,10 @@ Page.prototype.getUrl = function() {
 
 Page.prototype.getSearchBox = function() {
     return new SearchBox(this.driver)
+};
+
+Page.prototype.getSearchButton = function() {
+    return new SearchButton(this.driver)
 };
 
 Page.prototype.hasSearchResults = function() {

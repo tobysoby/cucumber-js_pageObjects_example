@@ -4,12 +4,16 @@ const StartPage = require("./pageObjects/startPage/StartPage")
 
 var page 
 
-Given('I open my locally running version of moscow_mule', function () {
+Given('I open the google search', function () {
     return page = new StartPage(this.driver)
 });
 
 When('I enter {string} in the search box', function (string) {
     return page.getSearchBox().enterSearchString(string)
+});
+
+When('I press the search button', function () {
+    return page.getSearchButton().press()
 });
 
 Then('I see search results', function () {

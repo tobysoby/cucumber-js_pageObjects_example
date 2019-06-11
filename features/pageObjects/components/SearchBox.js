@@ -1,7 +1,7 @@
 "use strict";
 const { By, until } = require('selenium-webdriver')
 
-const SearchBoxSelector = "//div[contains(@class, 'react-autosuggest__container')]/input"
+const SearchBoxSelector = "//input[contains(@name, 'q')]"
 
 var logStr = "SearchBoxComponent: "
 
