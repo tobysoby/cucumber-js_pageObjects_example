@@ -1,6 +1,6 @@
 const { Given, When, Then } = require("cucumber");
 const { expect } = require("chai");
-const StartPage = require("./pageObjects/startPage/StartPage")
+const StartPage = require(process.cwd() + "/pageObjects/startPage/StartPage")
 
 var page 
 
